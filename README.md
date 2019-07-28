@@ -1,25 +1,22 @@
-# dummy-app
+# base-npm-lib
 
-A dummy app that is wired with Webpack and Babel for prototyping ES6 JavaScript intended for browswers.
+Shell for developing npm packages, wired with Webpack and Babel to allow ES6 and import/export modules
 
-## Setup
+## How to use `base-npm-lib` to build a package?
 
-```
-npm install
-```
+### 1. Clone
 
-## Run
+* Clone this repo
+* Create a github repo with the name for your package and add the newly created repo as the origin remote
+* Update the details in `package.json` file (name, description, github url and versoin).
 
-1. First run the following command to transpile your JavaScript code that is included in the `public/index.html` file as `bundle.js`
+### 2. Build
 
-```
-npm run watch
-```
+* `npm run build` to build the package
 
-2. In a separate shell, start the local web server with the following built-in script
+### 3. Publish
 
-```
-npm run ws
-```
+* `npm login` (first time only)
+* `npm publish`
 
-3. Navigate to `localhost:8000` and open the console to see the output from your JavaScript code.
+

@@ -1,14 +1,20 @@
 {
-  "name": "dummy-app",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "base-npm-lib",
+  "version": "1.0.9",
+  "description": "Base repo for building npm modules",
+  "main": "dist/index.js",
   "scripts": {
     "build": "webpack --config webpack.config.js",
-    "ws": "./node_modules/local-web-server/bin/cli.js -d ./public",
-    "watch": "watch 'npm run build' ./src"
+    "watch": "watch 'npm run build' ./src",
+    "test": "npm run build && ./node_modules/mocha/bin/mocha"
   },
-  "keywords": [],
+  "keywords": [
+    "npm",
+    "module",
+    "package",
+    "babel",
+    "webpack"
+  ],
   "author": "Sahil Khosla",
   "license": "ISC",
   "devDependencies": {
@@ -21,6 +27,7 @@
     "watch": "^1.0.2"
   },
   "dependencies": {
-    "local-web-server": "^3.0.4"
+    "mocha": "^6.2.0",
+    "sinon": "^7.3.2"
   }
 }

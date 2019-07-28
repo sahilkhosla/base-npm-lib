@@ -1,8 +1,11 @@
-// es6 imports
-import { sayHello } from './util';
-sayHello('world');
+// named import
+import { sayHello } from "./util";
 
-// es6 fat arrow function
-(() => {
-  console.log('I am a fat arrow!!');
-})();
+// default import
+import greet from "./greet";
+
+// sayHello and greet will be available upon installing the lib
+export default {
+  sayHello,
+  greet
+}
