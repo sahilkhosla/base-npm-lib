@@ -1,12 +1,13 @@
 {
   "name": "base-npm-lib",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Base repo for building npm modules",
   "main": "dist/index.js",
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "watch": "watch 'npm run build' ./src",
-    "test": "npm run build && ./node_modules/mocha/bin/mocha"
+    "test": "npm run build && ./node_modules/mocha/bin/mocha",
+    "publish": "npm version patch --force && npm run build && npm publish"
   },
   "keywords": [
     "npm",
