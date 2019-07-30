@@ -1,6 +1,6 @@
 {
   "name": "base-npm-lib",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Base repo for building npm modules",
   "main": "dist/index.js",
   "scripts": {
