@@ -2,5 +2,5 @@
 import { sayHello } from './util';
 
 export default () => {
-  sayHello('hello world!!');
+  sayHello('world!!');
 };
