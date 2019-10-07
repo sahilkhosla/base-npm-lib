@@ -5,7 +5,7 @@ import { sayHello } from "./util";
 import greet from "./greet";
 
 // sayHello and greet will be available upon installing the lib
-export default {
+export {
   sayHello,
   greet
 }

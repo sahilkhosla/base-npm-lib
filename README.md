@@ -34,11 +34,11 @@ Shell for developing npm packages, wired with Webpack and Babel to allow ES6 and
 ### 2. Use
 
 ```javascript
-import Base from 'base-npm-lib'
+import { sayHello, greet } from 'base-npm-lib'
 
 ...
 
-Base.sayHello('name'); // hello name
-Base.greet(); // hello world!!
+sayHello('name'); // hello name
+greet(); // hello world!!
 
 ```
