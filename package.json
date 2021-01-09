@@ -30,5 +30,10 @@
   "dependencies": {
     "mocha": "^6.2.0",
     "sinon": "^7.3.2"
+  },
+  "homepage": "https://github.com/sahilkhosla/base-npm-lib",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/sahilkhosla/base-npm-lib.git"
   }
 }
