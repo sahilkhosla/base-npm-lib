@@ -1,0 +1,6 @@
+.vscode
+.gitignore
+node_modules
+src
+test
+webpack.config.js
